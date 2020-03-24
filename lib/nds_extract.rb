@@ -57,7 +57,7 @@ def gross_per_studio(collection)
     if studio_totals.include?(current_studio)
       studio_totals[:current_studio] += collection[row_index][:worldwide_gross]
     else
-      
+      studio_totals[:current_studio] = 
     
     
  
