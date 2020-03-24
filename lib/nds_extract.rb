@@ -51,8 +51,11 @@ end
 
 def gross_per_studio(collection)
   row_index = 0
+  studio_totals = {}
   while row_index < collection.length do
-    
+    current_studio = collection[row_index][:studio]
+    if studio_totals.include?(current_studio)
+      studio_totals[:current_studio] = 
     
     
  
