@@ -50,7 +50,9 @@ end
 
 
 def gross_per_studio(collection)
-  
+  row_index = 0
+  while row_index < collection.length do
+    
     
     
  
