@@ -55,9 +55,9 @@ def gross_per_studio(collection)
   while row_index < collection.length do
     current_studio = collection[row_index][:studio]
     if studio_totals.include?(current_studio)
-      studio_totals[:current_studio] += collection[row_index][:worldwide_gross]
+      studio_totals[current_studio] += collection[row_index][:worldwide_gross]
     else
-      studio_totals[:current_studio] = collection[row_index][:worldwide_gross]
+      studio_totals[current_studio] = collection[row_index][:worldwide_gross]
     end
     row_index += 1
     binding.pry
